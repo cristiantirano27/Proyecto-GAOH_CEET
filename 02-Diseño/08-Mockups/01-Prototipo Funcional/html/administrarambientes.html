@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Ambientes</title>
+</head>
+
+<body>
+    <div class="img">
+        <img src="/imagenes/logo.jpg" alt="logo" width="50" height="50">
+        <p>GAOH_CEET</p>
+    </div>
+    <div class="titulo">
+        <h1>Aministracion de Ambientes</h1>
+    </div>
+    <div class="form">
+        <form action="/my-handing-form-page" method="POST">
+            <label for="number">Numero Ambiente</label><br>
+            <input type="number" id="number" name="enviroment_name"><br>
+            <label for="description">Descripcion</label><br>
+            <textarea id="description" name="enviroment_description"></textarea><br><br>
+            <label for="status">Estado</label>
+            <select id="status" name="enviroment_status">
+                <option value="active">ACTIVO</option>
+                <option value="inactive">INACTIVO</option>
+            </select><br><br>
+            <label for="type">Tipo Ambiente</label><br>
+            <input type="text" id="type" name="enviroment_type"><br><br>
+            <label for="name">Nombre Sede</label><br>
+            <select id="status" name="_status">
+                <option value="">Sede Colombia</option>
+                <option value="">Sede Ricaurte</option>
+                <option value="">Sede Restrepo</option>
+                <option value="">Zona Deportiva CEET</option>
+            </select><br><br>
+            <button type="submit">Agregar</button>
+            <button type="submit">Ver</button>
+            <button type="submit">Modificar</button>
+            <button type="submit">Eliminar</button>
+        </form><br>
+        <form action="pagprincipallider.html">
+            <input type="submit" value="Volver">
+        </form>
+</body>
+
+</html>

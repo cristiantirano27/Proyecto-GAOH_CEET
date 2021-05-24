@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Disponibilidad</title>
+</head>
+<body>
+    <div class="img">
+        <img src="/imagenes/logo.jpg" alt="logo" width="50" height="50">
+        <p>GAOH_CEET</p>
+    </div>
+    <div class="titulo">
+        <h1>Administrar mi Disponibilidad</h1>
+    </div>
+    <div class="form">
+        <form action="/my-handing-form-page" method="POST">
+            <label for="time">Hora Inicio</label><br>
+            <input type="time" id="time" name="start_time"><br>
+            <label for="time">Hora Final</label><br>
+            <input type="time" id="time" name="finish_time"><br>
+            <legend>Sigla Jornada</legend><br>
+            <input type="radio" id="day" name="day_acronym" value="day" checked>
+            <label for="day">D</label>
+            <input type="radio" id="weekend" name="day_acronym" value="weekend">
+            <label for="weekend">FDS</label>
+            <input type="radio" id="mixed" name="day_acronym" value="mixed">
+            <label for="mixed">M</label><br><br>
+            <label for="day">Dias a Laborar</label><br><br>
+            <label for="desc">De</label>
+            <select id="day" name="start_day">
+                <option value="monday">Lunes</option>
+                <option value="tuesday">Martes</option>
+                <option value="wednesday">Miercoles</option>
+                <option value="thursday">Jueves</option>
+                <option value="friday">Viernes</option>
+                <option value="saturday">Sabado</option>
+                <option value="sunday">Domingo</option>
+            </select>
+            <label for="desc"> A </label>
+            <select id="day" name="finish_day">
+                <option value="monday">Lunes</option>
+                <option value="tuesday">Martes</option>
+                <option value="wednesday">Miercoles</option>
+                <option value="thursday">Jueves</option>
+                <option value="friday">Viernes</option>
+                <option value="saturday">Sabado</option>
+                <option value="sunday">Domingo</option>
+            </select><br><br>
+            <button type="submit">Ver</button>
+            <button type="submit">Modificar</button>
+        </form><br>
+        <form action="pagprincipalinstructor.html">
+            <input type="submit" value="Volver">
+        </form>
+    </div>
+</body>
+</html>

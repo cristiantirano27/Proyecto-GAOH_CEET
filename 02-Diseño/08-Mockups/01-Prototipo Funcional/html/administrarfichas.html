@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asministrar Fichas de Formacion</title>
+</head>
+
+<body>
+    <div class="img">
+        <img src="/imagenes/logo.jpg" alt="logo" width="50" height="50">
+        <p>GAOH_CEET</p>
+    </div>
+    <div class="titulo">
+        <h1>Agregar Trimestres a una Ficha</h1>
+    </div>
+    <div class="form">
+        <form action="/my-handing-form-page" method="POST">
+            <label for="number">Numero Ficha</label><br>
+            <input type="number" id="number" name="file_number"><br>
+            <label for="date">Fecha Inicio</label><br>
+            <input type="date" id="date" name="start_date"><br>
+            <label for="date">Fecha Date</label><br>
+            <input type="date" id="date" name="finish_date"><br>
+            <label for="route">Ruta</label><br>
+            <input type="text" id="route" name="route_date"><br><br>
+            <label for="status">Estado Ficha</label>
+            <select id="status" name="file_status">
+                <option value="in_execution">En Ejecucion</option>
+                <option value="finish">Terminada</option>
+                <option value="cancel">Cancelada</option>
+            </select><br><br>
+            <label for="code">Codigo Programa</label><br>
+            <input type="number" id="code" name="file_program_code"><br>
+            <label for="name">Nombre Trimestre</label><br><br>
+            <label for="name">De</label>
+            <select id="name" name="term_name">
+                <option value="I">Trimestre I</option>
+                <option value="II">Trimestre II</option>
+                <option value="III">Trimestre III</option>
+                <option value="IV">Trimestre IV</option>
+                <option value="V">Trimestre V</option>
+                <option value="VI">Trimestre VI</option>
+                <option value="VII">Trimestre VII</option>
+                <option value="VIII">Trimestre VIII</option>
+            </select>
+            <label for="name">A</label>
+            <select id="name" name="term_name">
+                <option value="I">Trimestre I</option>
+                <option value="II">Trimestre II</option>
+                <option value="III">Trimestre III</option>
+                <option value="IV">Trimestre IV</option>
+                <option value="V">Trimestre V</option>
+                <option value="VI">Trimestre VI</option>
+                <option value="VII">Trimestre VII</option>
+                <option value="VIII">Trimestre VIII</option>
+            </select><br><br>
+            <button type="submit">Agregar</button>
+            <button type="submit">Ver</button>
+            <button type="submit">Modificar</button>
+            <button type="submit">Eliminar</button>
+        </form><br>
+        <form action="pagprincipallider.html">
+            <input type="submit" value="Volver">
+        </form>
+</body>
+
+</html>

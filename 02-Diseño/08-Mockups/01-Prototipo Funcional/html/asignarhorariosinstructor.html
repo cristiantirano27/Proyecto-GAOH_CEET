@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignar Horarios</title>
+</head>
+
+<body>
+    <div class="img">
+        <img src="/imagenes/logo.jpg" alt="logo" width="50" height="50">
+        <p>GAOH_CEET</p>
+    </div>
+    <div class="titulo">
+        <h1>Asignacion de Horarios de Instructores</h1>
+    </div>
+    <div class="form">
+        <form action="/my-handing-form-page" method="POST">
+            <label for="document">Tipo Documento</label>
+            <select id="document" name="document_type_teacher">
+                <option value="CC">Cedula de Ciudadanía</option>
+                <option value="CE">Cedula de Extranjería</option>
+            </select><br><br>
+            <label for="number">Numero Documento</label><br>
+            <input type="number" id="number" name="document_number_teacher"><br><br>
+            <label for="time">Hora Inicio</label>
+            <input type="time" id="time" name="start_time_teacher"><br><br>
+            <label for="time">Hora Fin </label>
+            <input type="time" id="code" name="finish_time_teacher"><br><br>
+            <button type="submit">Agregar</button>
+        </form><br>
+        <form action="pagprincipallider.html">
+            <input type="submit" value="Volver">
+        </form>
+</body>
+
+</html>

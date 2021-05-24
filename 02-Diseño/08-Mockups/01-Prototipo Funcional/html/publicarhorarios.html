@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar Horarios</title>
+</head>
+<body>
+    <div class="img">
+        <img src="/imagenes/logo.jpg" alt="logo" width="50" height="50">
+        <p>GAOH_CEET</p>
+    </div>
+    <div class="titulo">
+        <h1>Publicar Horarios</h1>
+    </div>
+    <div class="form">
+        <form action="/my-handing-form-page" method="POST">
+            <label for="time">Hora de Inicio</label><br>
+            <input type="time" id="time" name="start_time"><br>
+            <label for="time">Hora de Fin</label><br>
+            <input type="time" id="time" name="finish_time"><br>
+            <label for="number">Numero Ficha</label><br>
+            <input type="number" id="time" name="file_number">
+            <label for="day">Grupo</label>
+            <select id="group" name="group_file">
+                <option value="G1">G1</option>
+                <option value="G2">G2</option>
+                <option value="G3">G3</option>
+                <option value="G4">G4</option>
+                <option value="G5">G5</option>
+            </select><br><br>
+            <label for="name">Nombre Trimestre</label>
+            <select id="name" name="term_name">
+                <option value="I">Trimestre I</option>
+                <option value="II">Trimestre II</option>
+                <option value="III">Trimestre III</option>
+                <option value="IV">Trimestre IV</option>
+                <option value="V">Trimestre V</option>
+                <option value="VI">Trimestre VI</option>
+                <option value="VII">Trimestre VII</option>
+                <option value="VIII">Trimestre VIII</option>
+            </select><br><br>
+            <legend>Sigla Jornada</legend><br>
+            <input type="radio" id="day" name="day_acronym" value="day" checked>
+            <label for="day">D</label>
+            <input type="radio" id="weekend" name="day_acronym" value="weekend">
+            <label for="weekend">FDS</label>
+            <input type="radio" id="mixed" name="day_acronym" value="mixed">
+            <label for="mixed">M</label><br><br>
+            <label for="level">Nivel Formacion</label><br>
+            <input type="text" id="level" name="formation_level"><br>
+            <label for="name">Nombre Modalidad</label><br>
+            <input type="text" id="name" name="modality_name"><br>
+            <label for="id">Id Version</label><br>
+            <input type="number" id="id" name="version_id"><br>
+            <label for="id">Id Trimestre Vigente</label><br>
+            <input type="number" id="id" name="current_quarter_id"><br><br>
+            <label for="name">Nombre Dia</label>
+            <select id="name" name="day_name">
+                <option value="monday">Lunes</option>
+                <option value="tuesday">Martes</option>
+                <option value="wednesday">Miercoles</option>
+                <option value="thursday">Jueves</option>
+                <option value="friday">Viernes</option>
+                <option value="saturday">Sabado</option>
+                <option value="sunday">Domingo</option>
+            </select><br><br>
+            <label for="number">Numero Ambiente</label><br>
+            <input type="number" id="number" name="enviroment_number"><br>
+            <label for="name">Nombre Ambiente</label><br>
+            <input type="text" id="number" name="enviroment_name"><br>
+            <label for="name">Nombre Sede</label><br>
+            <input type="text" id="number" name="campus_number"><br><br>
+            <button type="submit">Publicar</button><br><br>
+        </form>
+        <form action="pagprincipallider.html">
+            <input type="submit" value="Volver a inicio" />
+        </form>
+</body>
+</html>

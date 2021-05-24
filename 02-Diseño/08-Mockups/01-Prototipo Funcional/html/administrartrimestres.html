@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Trimestre</title>
+</head>
+
+<body>
+    <div class="img">
+        <img src="/imagenes/logo.jpg" alt="logo" width="50" height="50">
+        <p>GAOH_CEET</p>
+    </div>
+    <div class="titulo">
+        <h1>Administracion de Trimestres</h1>
+    </div>
+    <div class="form">
+        <form action="/my-handing-form-page" method="POST">
+            <label for="name">Nombre Trimestre</label>
+            <select id="name" name="term_name">
+                <option value="I">Trimestre I</option>
+                <option value="II">Trimestre II</option>
+                <option value="III">Trimestre III</option>
+                <option value="IV">Trimestre IV</option>
+                <option value="V">Trimestre V</option>
+                <option value="VI">Trimestre VI</option>
+                <option value="VII">Trimestre VII</option>
+                <option value="VIII">Trimestre VIII</option>
+            </select><br><br>
+            <label for="day">Sigla Jornnada</label>
+            <select id="day" name="day_acronym">
+                <option value="day">D</option>
+                <option value="mixed">M</option>
+                <option value="weekend">FDS</option>
+            </select><br><br>
+            <label for="level">Nivel de Formacion</label>
+            <select id="level" name="formation_level">
+                <option value="technical">Tecnico</option>
+                <option value="technologist">Tecnologo</option>
+            </select><br><br>
+            <button type="submit">Agregar</button>
+            <button type="submit">Ver</button>
+            <button type="submit">Modificar</button>
+            <button type="submit">Eliminar</button>
+        </form><br>
+        <form action="pagprincipal.html">
+            <input type="submit" value="Volver">
+        </form>
+    </div>
+
+</body>
+
+</html>
