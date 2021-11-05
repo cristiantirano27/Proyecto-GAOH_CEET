@@ -5,7 +5,7 @@ CREATE TABLE actividad (
   id      int NOT NULL AUTO_INCREMENT, 
   id_fase int NOT NULL, 
   numero  int NOT NULL, 
-  nombre  varchar(100) NOT NULL, 
+  nombre  varchar(200) NOT NULL, 
   PRIMARY KEY (id), 
   INDEX (numero));
 CREATE TABLE ambiente (
@@ -13,8 +13,7 @@ CREATE TABLE ambiente (
   id_sede     int NOT NULL, 
   numero      varchar(10) NOT NULL, 
   descripcion varchar(45) NOT NULL, 
-  estado      boolean NOT NULL, 
-  tipo        varchar(45) NOT NULL, 
+  estado      varchar NOT NULL, 
   limitacion  int NOT NULL, 
   PRIMARY KEY (id), 
   INDEX (id_sede), 
@@ -30,13 +29,13 @@ CREATE TABLE cliente_has_rol (
 CREATE TABLE competencia (
   id          int NOT NULL AUTO_INCREMENT, 
   id_programa int NOT NULL, 
-  codigo      varchar(100) NOT NULL, 
-  descripcion int NOT NULL, 
+  codigo      varchar(50) NOT NULL, 
+  descripcion varchar(200) NOT NULL, 
   PRIMARY KEY (id), 
   INDEX (codigo));
 CREATE TABLE dia (
   id                       int NOT NULL AUTO_INCREMENT, 
-  nombre                   int NOT NULL UNIQUE, 
+  nombre                   varchar(10) NOT NULL UNIQUE, 
   estado                   boolean NOT NULL,  
   PRIMARY KEY (id));
 CREATE TABLE disponibilidad_competencias (
@@ -211,7 +210,7 @@ CREATE TABLE resultado_vistos (
   INDEX (id_resultado_aprendizaje));
 CREATE TABLE rol (
   id          int NOT NULL AUTO_INCREMENT, 
-  nombre      varchar(10) NOT NULL UNIQUE, 
+  nombre      varchar(20) NOT NULL UNIQUE, 
   descripcion varchar(100) NOT NULL, 
   estado      boolean NOT NULL, 
   PRIMARY KEY (id));
@@ -230,7 +229,7 @@ CREATE TABLE servidor_correo_electronico (
   PRIMARY KEY (id));
 CREATE TABLE trimestre (
   id                 int NOT NULL AUTO_INCREMENT, 
-  nombre             varchar(20) NOT NULL, 
+  nombre             varchar(50) NOT NULL, 
   id_jornada         int NOT NULL, 
   id_nivel_formacion int NOT NULL, 
   PRIMARY KEY (id), 
@@ -251,13 +250,13 @@ CREATE TABLE usuario (
   id               int NOT NULL AUTO_INCREMENT, 
   id_documento     int NOT NULL, 
   numero_documento varchar(15) NOT NULL, 
-  pirmer_nombre    varchar(20) NOT NULL, 
+  primer_nombre    varchar(20) NOT NULL, 
   segundo_nombre   varchar(20), 
   primer_apellido  varchar(20) NOT NULL, 
   segundo_apellido varchar(20), 
   foto             blob, 
   correo           varchar(100) NOT NULL UNIQUE, 
-  contraseina      varchar(100) NOT NULL, 
+  contrasenia      varchar(100) NOT NULL, 
   fecha_fin        varchar(20) NOT NULL, 
   PRIMARY KEY (id), 
   INDEX (id_documento), 
